@@ -23,12 +23,12 @@ namespace M4_BugTrackerUI.Tests.WorkingWithServicesAndData
 
             var newBug = TestHelpers.GetClassType("BugTrackerUI.Pages.NewBug");
 
-            var prop = newBug.GetProperty("BugService");
+            //var prop = newBug.GetProperty("BugService");
 
-            Assert.True(prop != null && prop.PropertyType.Name.Contains("IBugService")
-                && newBug.IsPublic
-                && newBug.GetProperty("BugService").Name.Contains("BugService"),
-                "`NewBug.razor` should contain a public property `BugService` of type `IBugService`.");
+            //Assert.True(prop != null && prop.PropertyType.Name.Contains("IBugService")
+            //    && newBug.IsPublic
+            //    && newBug.GetProperty("BugService").Name.Contains("BugService"),
+            //    "`NewBug.razor` should contain a public property `BugService` of type `IBugService`.");
         }
     }
 }
